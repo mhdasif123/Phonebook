@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'delete.css' %}">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        #logo {
+            padding-top: 40px;
+            padding-left: 490px;
+            font-size: 40px;
+
+        }
+
+        #main {
+            background-color: grey;
+            height: 190px;
+            width: 470px;
+            margin-left: 445px;
+            margin-top: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #f1 {
+            margin-top: 10px;
+            margin-left: -74px;
+            font-size: 17px;
+            margin-bottom: 50px;
+        }
+
+        #f2 {
+            margin-top: 25px;
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        #f3 {
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 15px;
+            width: 100px;
+        }
+
+        #f4 {
+            margin-top: 25px;
+            margin-left: 30px;
+            font-size: 15px;
+        }
+
+        #f5 {
+            margin-top: 25px;
+            margin-left: 0px;
+            font-size: 15px;
+
+        }
+
+        #bt1 {
+            padding-left: 5px;
+            padding-top: 5px;
+            margin-left: 290px;
+            margin-top: 10px;
+            width: 100px;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: burlywood;
+        }
+    </style>
+    <h1 id="logo">DELETE CONTACT</h1>
+    <div id="main">
+        <form action="dlt" method="POST">
+            {% csrf_token %}
+            <label for="dltname" id="f1">Name: </label>
+            <input type="text" name="name" id="f2"><br>
+            <label for="dltnumber" id="f4">Number: </label>
+            <input type="text" name="number" id="f5">
+            <button type="submit" value="submit" id="f3">Delete</button><br>
+            <button id="bt1"><a href="home.html">HOME</a></button>
+        </form><br>
+        {{key4}}
+    </div>
+</body>
+
+</html>

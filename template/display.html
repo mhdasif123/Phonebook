@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'display.css'}">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        #logo {
+            padding-top: 40px;
+            padding-left: 490px;
+            font-size: 40px;
+
+        }
+
+        #main {
+            background-color: grey;
+            height: 300px;
+            width: 470px;
+            margin-left: 445px;
+            margin-top: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #fm1 {
+            padding-left: 40px;
+        }
+
+        #bd {
+            padding-left: 5px;
+            padding-top: 5px;
+            margin-left: 249px;
+            margin-top: 10px;
+            width: 100px;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: burlywood;
+        }
+
+        #sbt {
+            padding-left: 5px;
+            padding-top: 5px;
+            margin-left: 249px;
+            margin-top: 10px;
+            width: 100px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+            margin-left: 50px;
+        }
+
+        table {
+            width: 50%;
+        }
+
+        th {
+            height: 70px;
+        }
+    </style>
+    <div id="main">
+        <form action="disply" id="fm1">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>Number</td>
+                </tr>
+                {% for i in contact %}
+                <tr>
+                    <td>{{i.Name}}</td>
+                    <td>{{i.Number}}</td>
+                </tr>
+                {% endfor %}
+            </table><br>
+            <input type="submit" value="display" id="sbt">
+            <button id="bd"><a href="home.html">HOME</a></button>
+        </form>
+        {{key2}}
+    </div>
+</body>
+
+</html>

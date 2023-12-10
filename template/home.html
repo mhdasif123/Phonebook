@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+</head>
+<style>
+    body{
+        background-color: lightblue;
+    }
+</style>
+<body>
+    <!-- <img src="{% static 'media/img/ph.jpg'%}" alt="" id="img"> -->
+    
+    <div id="logo"><strong>PHONEBOOK</strong></div>
+    <div id="main">
+        <form class="btns" method="POST">
+            <button id="bt1"><a href="newcontact.html">CREATE NEW CONTACTS</a></button><br>
+            <button id="bt2"><a href="display.html">DISPLAY CONTACTS</a></button><br>
+            <button id="bt3"><a href="update.html">UPDATE CONTACTS</a></button><br>
+            <button id="bt4"><a href="delete.html">DELETE CONTACTS</a></button><br>
+        </form>
+    </div>
+</body>
+
+</html>

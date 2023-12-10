@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'newcontact.css' %}">
+</head>
+
+<body>
+    <h1 id="heading">NEW CONTACT ADD</h1>
+    <div id="main">
+        <form action="insert" method="POST" id="new">
+            {% csrf_token %}
+            <label for="" id="f1">Name: </label>
+            <input type="text" name="name" id="f2"><br>
+            <label for="" id="f3">Mobile Number: </label>
+            <input type="text" name="mobilenumber" id="f4"><br>
+            <button type="submit" value="submit" id="f5">Submit</button>
+            <button id="hmbt"><a href="home.html">HOME</a></button>
+        </form>
+        {{key1}}
+    </div>
+
+</body>
+
+</html>

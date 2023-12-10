@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'update.css' %}">
+</head>
+
+<body>
+    <div id="logo">
+        <strong>UPDATE CONTACT</strong>
+    </div>
+
+    <div id="main"></div>
+    <form method="POST" action="updt" id="up" style="margin-top: -350px;
+    margin-left: 80px;
+    font-size: 17px;
+    text-align: center;">
+        {% csrf_token %}
+        <!-- name update -->
+        <label for="oldname" id="f1">Old Name:</label>
+        <input id="txt" type=" text" name="oldname"><br><br>
+        <label for="newname" id="f1">New Name:</label>
+        <input id="txt" type="text" name="newname"><br><br>
+        <button id="btn" type="submit" value="submit">Update Name</button><br><br>
+        {{key3}}
+        </form><br>
+        <!-- contact update -->
+        <form id="form2" method="POST" action="updtnb">
+        {% csrf_token %}
+        <label for="oldnumber" id="f2">Old Number:</label>
+        <input id="txt" type=" text" name="oldnumber"><br><br>
+        <label for="newnumber" id="f2">New Number:</label>
+        <input id="txt" type="text" name="newnumber"><br><br>
+        <button id="btn1" type="submit" value="submit">Update Number</button><br>
+
+        <button id="bn1"><a href="home.html">HOME</a></button><br>
+        {{key5}}
+    </form><br>
+    </div>
+</body>
+
+</html>
