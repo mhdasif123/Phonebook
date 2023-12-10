@@ -1,0 +1,29 @@
+body {
+    background-color: lightblue;
+}
+
+#logo {
+    padding-top: 40px;
+    padding-left: 490px;
+    font-size: 40px;
+
+}
+
+#main {
+    background-color: grey;
+    height: 185px;
+    width: 470px;
+    margin-left: 445px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#fm1 {
+    padding-left: 40px;
+}
+
+#bd {
+    padding-top: 10px;
+    padding-left: 10px;
+}

@@ -1,0 +1,66 @@
+body{
+    background-color: lightblue;
+}
+
+#logo {
+    padding-left: 500px;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+#main {
+    background-color: grey;
+    height: 350px;
+    width: 405px;
+    margin-left: 430px;
+    margin-top: 80px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+.btns {
+    width: 100%;
+    height: 50%;
+    margin-top: -60px;
+    text-align: center;
+    margin-left: 7px;
+}
+
+#bt1 {
+    margin-top: 30px;
+    border-radius: 3px;
+    width: 65%;
+    height: 50px;
+    text-decoration: none;
+    background-color: #DEB887;
+}
+
+#bt2 {
+    margin-top: 30px;
+    border-radius: 3px;
+    width: 65%;
+    height: 50px;
+    text-decoration: none;
+    background-color: burlywood;
+}
+
+#bt3 {
+    margin-top: 30px;
+    border-radius: 3px;
+    width: 65%;
+    height: 50px;
+    text-decoration: none;
+    background-color: burlywood
+}
+
+#bt4 {
+    margin-top: 30px;
+    border-radius: 3px;
+    width: 65%;
+    height: 50px;
+    text-decoration: none;
+    background-color: burlywood;
+}
+
