@@ -2,9 +2,9 @@
 Developed a comprehensive Phonebook application using Django, providing a user-friendly interface for managing contacts efficiently. Phonebook is a simple Django app to manage contacts (first name, last name, mail, phone, mobile phone)
 
 # Technologies Used
-HTML: Used for structuring the web pages.<br>
-CSS: Employed for styling and layout.<br>
-Django: For Backend <br>
+- **HTML5**: Used for structuring the web pages.<br>
+- **CSS3**: Employed for styling and layout.<br>
+- **Django**: For Backend <br>
 
 # Quick Start
 1. Add 'phonebook' to your INSTALLED_APPS setting like this::
